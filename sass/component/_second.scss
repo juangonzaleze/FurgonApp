@@ -1,0 +1,74 @@
+.code{
+	margin-top: 15px;
+	margin-left: 12px !important;
+	font-size: 29px;
+}
+
+.second-section{
+	background: rgba(0, 0, 0, 0.9);
+			padding-top: 80px;
+	padding-bottom: 50px;
+	&__title{
+		text-align: center;
+		color: $color-white;
+		
+		// @include respond(m-phone){
+		// 	padding-top: 80px;
+		// }
+
+		h2{
+			font-family: 'Bree Serif', serif;
+			font-size: $l-size - .5;
+			font-weight: 650;
+			@include respond(m-phone){
+				font-size: $l-size - 1.1;
+			}
+		}
+		p{
+			color: $color-white;
+		}
+		span{
+			color: $color-secondary;
+		}
+	}
+
+	&__body-phone{
+		margin: 50px auto;
+		.div-i{
+			color: #fff;
+			background: $color-secondary;
+			width: 60px;
+			height: 60px;
+			margin-bottom: 18px;
+			& svg{
+				margin-top: 15px;
+				margin-left: 15px;
+				font-size: 29px;
+			}
+		}
+
+		h4{
+			margin-top: 20px;
+			font-weight: 550;
+			color: $color-secondary;
+			font-family: 'Bree Serif', serif;
+			font-size: $m-size;
+		}
+
+		p{
+			color: $color-white;
+		}
+
+		&__hover-section{
+			padding: 5px 15px;
+			transition: .3s all;
+			@include respond(tab-port){
+				padding: 5px;
+			}
+			&:hover{
+				background: rgba(231, 203, 63, .4);
+			}
+		}
+	}
+
+}

@@ -1,0 +1,70 @@
+.section-father{
+	padding-top: 80px;
+	padding-bottom: 50px;
+	background: #fafafa;
+	&__title{
+		text-align: center;
+		color: $color-black;
+		margin: 0 auto 35px;
+		font-weight: 650;
+		@include respond(m-phone){
+			margin: auto auto 30px;
+
+		}
+
+		h2{
+			font-family: 'Bree Serif', serif;
+			font-size: $l-size - .5;
+			font-weight: 650;
+			@include respond(m-phone){
+				font-size: $l-size - 1.1;
+			}
+		}
+		p{
+			color: $color-grey-dark;
+		}
+		span{
+			color: $color-secondary;
+		}
+	}
+
+}
+
+.animation{
+	visibility: visible;
+	animation-duration: 1.5s;
+	animation-delay: .4s;
+	animation-name: fadeInUp;
+}
+
+.our-service{
+
+	&__icon{
+		color: $color-secondary;
+		background: transparent;
+
+		transition: .4s;
+		font-size: 5.25em;
+	}
+
+	&__text{
+		margin-top: 15px;
+		h5{
+			font-family: 'Bree Serif', serif;
+			font-weight: 550;
+		}
+		.separated{
+			background: #e7cb3f;
+			height: 2px;
+			width: 50%;
+			margin: auto;
+			transition: .5s;
+		}
+
+		p{
+			margin-top: 5px;
+			color: $color-grey-dark;
+			font-family: 'Lato', sans-serif;
+		}
+	}
+}

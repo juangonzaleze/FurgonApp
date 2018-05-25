@@ -1,0 +1,47 @@
+.afterscroll{
+  max-height: 50px;
+  transition: .4s;
+}
+
+.img-brand{
+  max-height: 60px;
+  transition: .4s;
+}
+
+.navbar-father{
+  padding: 0;
+
+ .navbar{
+  background: #fafafa;
+  padding: 0;
+  box-shadow: 2px 2px 2px #000;
+
+}
+
+.cont-brand{
+ max-width: 200px;
+}
+
+.nav-item{
+    @include respond(navbar){
+    text-align: center;
+  }
+}
+
+.navbar-style{
+  color: $color-black;
+  font-family: "lato",sans-serif;
+  font-size: 14px;
+  padding: 6px 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+  transition: .3s;
+  list-style: none;
+}
+
+.navbar-style:hover{
+ color: #e7cb32;
+ text-decoration: none;
+}
+}

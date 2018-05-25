@@ -1,0 +1,24 @@
+.footer-section{
+	height: auto;
+	background: $color-primary-dark;
+	color: $color-white;
+
+	&__social{
+		padding: 25px;
+	&__img{
+		max-width: 250px;
+	}
+		&__social-btn{
+			font-size: 1.5em !important;
+			&:hover{
+				color: $color-secondary;
+			}
+		}
+	}
+
+	h4{
+		padding: 20px;
+	}
+
+
+}

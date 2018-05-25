@@ -1,0 +1,98 @@
+
+@import url('../../fonts/Lato-Bold.ttf');
+@import url('../../fonts/Lato-Regular.ttf');
+@import url('../../fonts/BreeSerif-Regular.ttf');
+
+
+body{
+   font-family: 'Lato', sans-serif !important;
+}
+
+
+.hero-father{
+     background: url('../img/hero/hero-4.jpg');
+     background-size: cover; 
+     background-position: center center;
+   .background-img{
+     height: 100vh;
+     background: rgba(0, 0, 0, .5);
+     @include respond(tab-port){
+      height: 50vh;
+     }
+    @include respond(m-phone){
+      height: 70vh;
+     }
+  }
+
+  .container-text-index{
+     margin: 250px auto 0;
+         @include respond (tab-port){
+          margin: 150px auto 50px;
+        }
+     h2{
+        color: $color-white;
+        text-align: center;
+        visibility: visible;
+        animation-duration: 1.5s;
+        animation-delay: .4s;
+        animation-name: fadeInDown;
+        font-size: $l-size + 1;
+        text-transform: capitalize;
+        text-shadow: rgba(0, 0, 0, 0.4) 5px 6px 10px;
+        span{
+         color: $color-secondary;
+         font-weight: 650;
+      }
+        @include respond(tab-port){
+          text-align: center;
+          font-size: $m-size + 1.2;
+        }
+        @include respond(m-phone){
+          text-align: center;
+          font-size: $m-size + 1.2;
+        }
+   }
+   h4{
+     color: $color-white;
+     text-align: center;
+     visibility: visible;
+     animation-duration: 1.5s;
+     animation-delay: .4s;
+     animation-name: fadeInUp;
+      @include respond(m-phone){
+        text-align: center;
+         font-size: $m-size;
+      }
+      @include respond(tab-port){
+        text-align: center;
+         font-size: $m-size;
+      }
+  }
+}
+
+ &__container-button{
+   margin: 50px auto;
+   text-align: center;
+   animation-name: bounceInLeft;
+   animation-duration: 1.5s;
+   animation-delay: .4s;
+       @include respond(m-phone){
+          margin: auto;
+        }
+   &__btn-style{
+        margin: auto 10px;
+        @include respond(m-phone){
+          margin-right: 28px;
+        }
+         @include respond(s-phone){
+         margin-right: 10px;
+        }
+      &:hover{
+        background: $color-secondary;
+        border-color: $color-secondary;
+         text-decoration: none;
+      }
+   }
+ }
+}   
+

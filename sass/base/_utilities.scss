@@ -1,0 +1,19 @@
+.u-center-text { text-align: center !important; }
+.u-auto-margin { margin:auto; }
+.u-padding-rightbig { padding-right: 50px; }
+.u-leftspacing-zero { padding-left: 0; margin-left: 0; }
+
+.owl-theme .owl-dots .owl-dot span{
+	    width: 48px !important;
+    height: 10px;
+    margin: 5px 7px;
+    background: #D6D6D6;
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: opacity .2s ease;
+    /* border-radius: 30px; */
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+	    background: $color-secondary !important;
+}
