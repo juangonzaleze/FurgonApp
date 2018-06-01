@@ -2540,6 +2540,41 @@ body {
         border-color: #e7cb3f;
         text-decoration: none; }
 
+/*----------------------- Preloader -----------------------*/
+.spinner {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #f3f3f3;
+  border-top: 5px solid #f25a41;
+  border-radius: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  animation: spin 1s infinite linear; }
+
+.active-spin {
+  display: block; }
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+.preload-background {
+  display: none;
+  background: rgba(255, 255, 255, 0.97);
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%; }
+
 .section-father {
   padding-top: 80px;
   padding-bottom: 50px;

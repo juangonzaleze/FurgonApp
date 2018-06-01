@@ -45,3 +45,12 @@ $('#screemshoot').owlCarousel({
         }
     }
 })
+
+jQuery(document).ready(function($) {
+    var spin = $('preload-background');
+    spin.addClass('active-spin');
+});
+$(document).ready(function(){
+    $('preload-background').fadeOut();
+    $('preload-background').removeClass('active-spin');
+});
